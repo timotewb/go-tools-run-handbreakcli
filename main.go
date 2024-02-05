@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -12,33 +13,72 @@ import (
 )
 
 func main() {
-	inDir, err := zenity.SelectFile(
-		zenity.Filename(""),
-		zenity.Directory(),
-		zenity.DisallowEmpty(),
-		zenity.Title("Select input directory"),
-	)
-	if err != nil {
-		zenity.Error(
-			err.Error(),
-			zenity.Title("Error"),
-			zenity.ErrorIcon,
-		)
-		log.Fatal(err)
+
+	var inDir string
+	var outDir string
+	var help bool
+	var err error
+	cli := true
+
+	flag.StringVar(&inDir, "indir", "", "Path to input directory where files are stored.")
+	flag.StringVar(&inDir, "i", "", "Path to input directory where files are stored.")
+	flag.StringVar(&outDir, "outdir", "", "Path to directory where converted files will be stored.")
+	flag.StringVar(&outDir, "o", "", "Path to directory where converted files will be stored.")
+	flag.BoolVar(&help, "help", false, "Show usage instructions")
+	flag.BoolVar(&help, "h", false, "Show usage instructions (shorthand)")
+	flag.Usage = func() {
+		fmt.Fprintln(os.Stderr, "----------------------------------------------------------------------------------------")
+		fmt.Fprintf(os.Stderr, "Usage of %s:\n\n", os.Args[0])
+		fmt.Fprintln(os.Stderr, "Pass both the -i and -o parameters to run in CLI mode:\n")
+		fmt.Fprintln(os.Stderr, "  -i string\n\tPath to input directory where files are stored (shorthand)")
+		fmt.Fprintln(os.Stderr, "  --indir string\n")
+		fmt.Fprintln(os.Stderr, "  -o string\n\tPath to directory where converted files will be stored (shorthand)")
+		fmt.Fprintln(os.Stderr, "  --outdir string\n\n")
+		fmt.Fprintln(os.Stderr, "  -h\n\tShow usage instructions (shorthand)")
+		fmt.Fprintln(os.Stderr, "  --help")
+		fmt.Fprintln(os.Stderr, "----------------------------------------------------------------------------------------\n")
 	}
-	outDir, err := zenity.SelectFile(
-		zenity.Filename(""),
-		zenity.Directory(),
-		zenity.DisallowEmpty(),
-		zenity.Title("Select output directory"),
-	)
-	if err != nil {
-		zenity.Error(
-			err.Error(),
-			zenity.Title("Error"),
-			zenity.ErrorIcon,
+	flag.Parse()
+
+	if help {
+		flag.Usage()
+		return
+	}
+
+	if inDir == "" {
+		cli = false
+		inDir, err = zenity.SelectFile(
+			zenity.Filename(""),
+			zenity.Directory(),
+			zenity.DisallowEmpty(),
+			zenity.Title("Select input directory"),
 		)
-		log.Fatal(err)
+		if err != nil {
+			zenity.Error(
+				err.Error(),
+				zenity.Title("Error"),
+				zenity.ErrorIcon,
+			)
+			log.Fatal(err)
+		}
+	}
+
+	if outDir == "" {
+		cli = false
+		outDir, err = zenity.SelectFile(
+			zenity.Filename(""),
+			zenity.Directory(),
+			zenity.DisallowEmpty(),
+			zenity.Title("Select output directory"),
+		)
+		if err != nil {
+			zenity.Error(
+				err.Error(),
+				zenity.Title("Error"),
+				zenity.ErrorIcon,
+			)
+			log.Fatal(err)
+		}
 	}
 
 	files, err := os.ReadDir(inDir)
@@ -68,8 +108,10 @@ func main() {
 		}
 	}
 
-	zenity.Info("Files converted!",
-		zenity.Title("Complete"),
-		zenity.InfoIcon,
-	)
+	if !cli {
+		zenity.Info("Files converted!",
+			zenity.Title("Complete"),
+			zenity.InfoIcon,
+		)
+	}
 }
