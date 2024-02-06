@@ -134,7 +134,7 @@ func main() {
 				for i := 1; i <= count; i++ {
 
 					outFile := filepath.Join(outDir, fmt.Sprintf("%s%02d.m4v", fileNameWithoutExt, i))
-					cmdStr = fmt.Sprintf("flatpak run --command=HandBrakeCLI fr.handbrake.ghb -v 1 -i \"%s\" -o \"%s\" -Z \"Apple 2160p60 4K HEVC Surround\" --encoder nvenc_h265", inFile, outFile)
+					cmdStr = fmt.Sprintf("flatpak run --command=HandBrakeCLI fr.handbrake.ghb -i \"%s\" -o \"%s\" -Z \"Apple 2160p60 4K HEVC Surround\" --encoder nvenc_h265 --title %d", inFile, outFile, i)
 
 					fmt.Print("  - Execute command:\n")
 					fmt.Printf("\t%s\n\n", cmdStr)
@@ -160,7 +160,7 @@ func main() {
 				fmt.Print("\n\n----------------------------------------------------------------------------------------\n")
 				fmt.Printf("Running file %s\n\n", file.Name())
 				outFile := filepath.Join(outDir, fileNameWithoutExt+".m4v")
-				cmdStr = fmt.Sprintf("flatpak run --command=HandBrakeCLI fr.handbrake.ghb -v 1 -i \"%s\" -o \"%s\" -Z \"Apple 2160p60 4K HEVC Surround\" --encoder nvenc_h265", inFile, outFile)
+				cmdStr = fmt.Sprintf("flatpak run --command=HandBrakeCLI fr.handbrake.ghb -i \"%s\" -o \"%s\" -Z \"Apple 2160p60 4K HEVC Surround\" --encoder nvenc_h265", inFile, outFile)
 
 				fmt.Print("  - Execute command:\n")
 				fmt.Printf("\t%s\n\n", cmdStr)
