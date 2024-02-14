@@ -22,6 +22,7 @@ func main() {
 	var help bool
 	var err error
 	var cmdStr string
+	var tidyCheck bool
 	cli := true
 
 	flag.StringVar(&inDir, "i", "", "Path to input directory where files are stored (shorthand)")
@@ -101,6 +102,7 @@ func main() {
 			ext := strings.ToLower(filepath.Ext(file.Name()))
 
 			if ext == ".iso" {
+				tidyCheck = true
 				fmt.Print("\n\n----------------------------------------------------------------------------------------\n")
 				fmt.Printf("Running IOS file %s\n\n", file.Name())
 				cmdStr = fmt.Sprintf("flatpak run --command=HandBrakeCLI fr.handbrake.ghb -i \"%s\" -t 0", inFile)
@@ -117,7 +119,8 @@ func main() {
 				// Run the command
 				err := cmd.Run()
 				if err != nil {
-					fmt.Printf("Failed to execute command: %v", err)
+					fmt.Printf("Failed to execute command: %v\n", err)
+					tidyCheck = false
 				}
 
 				output := buf.String()
@@ -129,7 +132,7 @@ func main() {
 
 				// Count the number of matches
 				count := len(matches)
-				fmt.Printf("- Found %d valid titles.\n", count)
+				fmt.Printf("Found %d valid titles.\n", count)
 
 				for i := 1; i <= count; i++ {
 
@@ -149,14 +152,14 @@ func main() {
 						// Run the command
 						err := cmd.Run()
 						if err != nil {
-							fmt.Printf("Failed to execute command: %v", err)
-						} else {
-							tidy(inFile)
+							fmt.Printf("Failed to execute command: %v\n", err)
+							tidyCheck = false
 						}
 					}
 				}
 
 			} else {
+				tidyCheck = true
 				fmt.Print("\n\n----------------------------------------------------------------------------------------\n")
 				fmt.Printf("Running file %s\n\n", file.Name())
 				outFile := filepath.Join(outDir, fileNameWithoutExt+".m4v")
@@ -175,11 +178,13 @@ func main() {
 					// Run the command
 					err := cmd.Run()
 					if err != nil {
-						log.Fatalf("Failed to execute command: %v", err)
-					} else {
-						tidy(inFile)
+						log.Fatalf("Failed to execute command: %v\n", err)
+						tidyCheck = false
 					}
 				}
+			}
+			if tidyCheck {
+				tidy(inFile)
 			}
 			fmt.Print("----------------------------------------------------------------------------------------\n\n")
 		}
@@ -190,6 +195,8 @@ func main() {
 			zenity.Title("Complete"),
 			zenity.InfoIcon,
 		)
+	} else {
+		fmt.Print("Complete.")
 	}
 }
 
