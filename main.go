@@ -24,6 +24,8 @@ func main() {
 	var cmdStr string
 	cli := true
 
+	ignore := []string{".DS_Store", "._.DS_Store"}
+
 	flag.StringVar(&inDir, "i", "", "Path to input directory where files are stored (shorthand)")
 	flag.StringVar(&inDir, "indir", "", "Path to input directory where files are stored")
 	flag.StringVar(&outDir, "o", "", "Path to directory where converted files will be stored (shorthand)")
@@ -156,7 +158,7 @@ func main() {
 					}
 				}
 
-			} else {
+			} else if !contains(ignore, file.Name()) {
 				fmt.Print("\n\n----------------------------------------------------------------------------------------\n")
 				fmt.Printf("Running file %s\n\n", file.Name())
 				outFile := filepath.Join(outDir, fileNameWithoutExt+".m4v")
@@ -208,4 +210,13 @@ func tidy(fn string) {
 	if errMove != nil {
 		log.Fatal(errMove)
 	}
+}
+
+func contains(list []string, target string) bool {
+	for _, str := range list {
+		if str == target {
+			return true
+		}
+	}
+	return false
 }
