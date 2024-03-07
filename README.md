@@ -1,4 +1,5 @@
 # go-tools-run-handbreakcli
+go1.21.4
 Tool to look at a folder and run a HandbreakCLI command on each file
 
 
