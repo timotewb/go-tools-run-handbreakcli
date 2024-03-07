@@ -1,6 +1,20 @@
 package app
+
+import (
+	"bytes"
+	"fmt"
+	"log"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"regexp"
+	"strings"
+)
+
 // Encode processes files in the specified input directory, encoding them according to the specified output directory.
 // It supports encoding of ISO files to extract and encode individual titles, as well as encoding of other video files.
+// If the encoding of titles is successful the input file will be moved to a `Complete` folder which will be created
+// inside the input directory if it does not already exist.
 // The encoding process uses HandBrakeCLI via a flatpak command for compatibility and performance.
 //
 // Parameters:
@@ -10,8 +24,8 @@ package app
 // Returns:
 //   None. The function performs the encoding process and moves the original files to a "Complete" directory within the same directory as the file.
 
-func Encode(inDir, outDir){
-	
+func Encode(inDir, outDir string, ignore []string, drun bool){
+
 	var cmdStr string
 	var tidyCheck bool
 
@@ -80,9 +94,8 @@ func Encode(inDir, outDir){
 						// Run the command
 						err := cmd.Run()
 						if err != nil {
-							fmt.Printf("Failed to execute command: %v", err)
-						} else {
-							tidy(inFile)
+							fmt.Printf("Failed to execute command: %v\n", err)
+							tidyCheck = false
 						}
 					}
 				}

@@ -1,17 +1,13 @@
 package main
 
 import (
-	"bytes"
 	"flag"
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
-	"path/filepath"
-	"regexp"
-	"strings"
 
 	"github.com/ncruces/zenity"
+	"github.com/timotewb/go-tools-run-handbreakcli/app"
 )
 
 func main() {
@@ -22,7 +18,6 @@ func main() {
 	var drun bool
 	var help bool
 	var err error
-	var cmdStr string
 	cli := true
 
 	// List file names for the code to ignore
@@ -98,7 +93,7 @@ func main() {
 	}
 
 	// Encode files
-	app.Encode(inDir, outDir)
+	app.Encode(inDir, outDir, ignore, drun)
 
 	// Finish processing
 	if !cli {
@@ -110,4 +105,3 @@ func main() {
 		fmt.Print("Complete.\n")
 	}
 }
-
