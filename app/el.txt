@@ -1,0 +1,506 @@
+[21:24:20] Compile-time hardening features are enabled
+[21:24:20] nvenc: version 12.1 is available
+[21:24:20] nvdec: is available
+[21:24:20] CUDA Version: 6.1
+[21:24:20] qsv: not available on this system
+[21:24:20] hb_init: starting libhb thread
+[21:24:20] thread 73be36dfd6c0 started ("libhb")
+HandBrake 1.7.2 (2024010400) - Linux x86_64 - https://handbrake.fr
+32 CPUs detected
+Opening /mnt/ns04/MakeMKV/backup/Complete/ELYSIUM.iso...
+[21:24:20] CPU: Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz
+[21:24:20]  - Intel microarchitecture Broadwell
+[21:24:20]  - logical processor count: 32
+[21:24:20] Intel Quick Sync Video support: no
+[21:24:20] hb_scan: path=/mnt/ns04/MakeMKV/backup/Complete/ELYSIUM.iso, title_index=0
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+[21:24:20] bd: not a bd - trying as a stream/file instead
+[21:24:20] scan: DVD has 29 title(s)
+[21:24:20] scan: scanning title 1
+[21:24:20] scan: duration is 00:15:00 (900480 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be08030800
+[21:24:20] scan: title 1 has 2 chapters
+[21:24:20] scan: chap 1, 480 ms
+[21:24:20] scan: chap 2, 900000 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 2
+[21:24:20] scan: duration is 01:45:04 (6304000 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be08031900
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[21:24:20] scan: checking audio 2
+[21:24:20] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=2
+[21:24:20] scan: checking audio 3
+[21:24:20] scan: id=0x82bd, lang=català (AC3), 3cc=cat ext=0
+[21:24:20] scan: checking audio 4
+[21:24:20] scan: id=0x83bd, lang=Francais (AC3), 3cc=fra ext=0
+[21:24:20] scan: checking audio 5
+[21:24:20] scan: id=0x84bd, lang=italiano (AC3), 3cc=ita ext=0
+[21:24:20] scan: checking audio 6
+[21:24:20] scan: id=0x85bd, lang=español (AC3), 3cc=spa ext=0
+[21:24:20] scan: checking subtitle 1
+[21:24:20] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=1
+[21:24:20] scan: checking subtitle 2
+[21:24:20] scan: id=0x21bd, lang=English Closed Caption (Wide Screen) [VOBSUB], 3cc=eng ext=5
+[21:24:20] scan: checking subtitle 3
+[21:24:20] scan: id=0x22bd, lang=العربية (Wide Screen) [VOBSUB], 3cc=ara ext=1
+[21:24:20] scan: checking subtitle 4
+[21:24:20] scan: id=0x23bd, lang=dansk (Wide Screen) [VOBSUB], 3cc=dan ext=1
+[21:24:20] scan: checking subtitle 5
+[21:24:20] scan: id=0x24bd, lang=Nederlands (Wide Screen) [VOBSUB], 3cc=nld ext=1
+[21:24:20] scan: checking subtitle 6
+[21:24:20] scan: id=0x25bd, lang=suomi (Wide Screen) [VOBSUB], 3cc=fin ext=1
+[21:24:20] scan: checking subtitle 7
+[21:24:20] scan: id=0x26bd, lang=Francais (Wide Screen) [VOBSUB], 3cc=fra ext=1
+[21:24:20] scan: checking subtitle 8
+[21:24:20] scan: id=0x27bd, lang=italiano (Wide Screen) [VOBSUB], 3cc=ita ext=1
+[21:24:20] scan: checking subtitle 9
+[21:24:20] scan: id=0x28bd, lang=norsk (Wide Screen) [VOBSUB], 3cc=nor ext=1
+[21:24:20] scan: checking subtitle 10
+[21:24:20] scan: id=0x29bd, lang=español (Wide Screen) [VOBSUB], 3cc=spa ext=1
+[21:24:20] scan: checking subtitle 11
+[21:24:20] scan: id=0x2abd, lang=svenska (Wide Screen) [VOBSUB], 3cc=swe ext=1
+[21:24:20] scan: checking subtitle 12
+[21:24:20] scan: id=0x2bbd, lang=català Forced (Wide Screen) [VOBSUB], 3cc=cat ext=9
+[21:24:20] scan: title 2 has 16 chapters
+[21:24:20] scan: chap 1, 404360 ms
+[21:24:20] scan: chap 2, 284600 ms
+[21:24:20] scan: chap 3, 429920 ms
+[21:24:20] scan: chap 4, 352160 ms
+[21:24:20] scan: chap 5, 256560 ms
+[21:24:20] scan: chap 6, 536760 ms
+[21:24:20] scan: chap 7, 1056800 ms
+[21:24:20] scan: chap 8, 187240 ms
+[21:24:20] scan: chap 9, 182640 ms
+[21:24:20] scan: chap 10, 172360 ms
+[21:24:20] scan: chap 11, 196200 ms
+[21:24:20] scan: chap 12, 370120 ms
+[21:24:20] scan: chap 13, 335920 ms
+[21:24:20] scan: chap 14, 431360 ms
+[21:24:20] scan: chap 15, 311320 ms
+[21:24:20] scan: chap 16, 795680 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 3
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 4
+[21:24:20] scan: duration is 00:00:14 (14840 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be0802bd80
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=Unknown (AC3), 3cc=und ext=0
+[21:24:20] scan: title 4 has 2 chapters
+[21:24:20] scan: chap 1, 14360 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 5
+[21:24:20] scan: duration is 00:00:05 (5000 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 6
+[21:24:20] scan: duration is 00:00:10 (10480 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be0802d2e0
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[21:24:20] scan: title 6 has 2 chapters
+[21:24:20] scan: chap 1, 10000 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 7
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 8
+[21:24:20] scan: duration is 00:00:35 (35600 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be080518a0
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[21:24:20] scan: title 8 has 2 chapters
+[21:24:20] scan: chap 1, 35120 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 9
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 10
+[21:24:20] scan: duration is 00:00:12 (12000 ms)
+[21:24:20] pgc_id: 2, pgn: 1: pgc: 0x73be080515c0
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=Unknown (AC3), 3cc=und ext=0
+[21:24:20] scan: title 10 has 2 chapters
+[21:24:20] scan: chap 1, 6000 ms
+[21:24:20] scan: chap 2, 6000 ms
+[21:24:20] scan: aspect = 4:3
+[21:24:20] scan: scanning title 11
+[21:24:20] scan: duration is 00:00:30 (30480 ms)
+[21:24:20] pgc_id: 40, pgn: 1: pgc: 0x73be08035c60
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=Unknown (AC3), 3cc=und ext=0
+[21:24:20] scan: title 11 has 2 chapters
+[21:24:20] scan: chap 1, 30000 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 12
+[21:24:20] scan: duration is 00:00:08 (8480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 13
+[21:24:20] scan: duration is 00:00:20 (20480 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be080c3210
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=Unknown (AC3), 3cc=und ext=0
+[21:24:20] scan: title 13 has 2 chapters
+[21:24:20] scan: chap 1, 20000 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 14
+[21:24:20] scan: duration is 00:12:47 (767400 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be080c6840
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[21:24:20] scan: checking subtitle 1
+[21:24:20] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=1
+[21:24:20] scan: checking subtitle 2
+[21:24:20] scan: id=0x21bd, lang=Nederlands (Wide Screen) [VOBSUB], 3cc=nld ext=1
+[21:24:20] scan: checking subtitle 3
+[21:24:20] scan: id=0x22bd, lang=Francais (Wide Screen) [VOBSUB], 3cc=fra ext=1
+[21:24:20] scan: checking subtitle 4
+[21:24:20] scan: id=0x23bd, lang=italiano (Wide Screen) [VOBSUB], 3cc=ita ext=1
+[21:24:20] scan: checking subtitle 5
+[21:24:20] scan: id=0x24bd, lang=español (Wide Screen) [VOBSUB], 3cc=spa ext=1
+[21:24:20] scan: title 14 has 2 chapters
+[21:24:20] scan: chap 1, 766920 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 15
+[21:24:20] scan: duration is 00:11:16 (676000 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be080c6840
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[21:24:20] scan: checking subtitle 1
+[21:24:20] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=1
+[21:24:20] scan: checking subtitle 2
+[21:24:20] scan: id=0x21bd, lang=Nederlands (Wide Screen) [VOBSUB], 3cc=nld ext=1
+[21:24:20] scan: checking subtitle 3
+[21:24:20] scan: id=0x22bd, lang=Francais (Wide Screen) [VOBSUB], 3cc=fra ext=1
+[21:24:20] scan: checking subtitle 4
+[21:24:20] scan: id=0x23bd, lang=italiano (Wide Screen) [VOBSUB], 3cc=ita ext=1
+[21:24:20] scan: checking subtitle 5
+[21:24:20] scan: id=0x24bd, lang=español (Wide Screen) [VOBSUB], 3cc=spa ext=1
+[21:24:20] scan: title 15 has 2 chapters
+[21:24:20] scan: chap 1, 675520 ms
+[21:24:20] scan: chap 2, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 16
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 17
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 18
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 19
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 20
+[21:24:20] scan: duration is 00:10:20 (620960 ms)
+[21:24:20] pgc_id: 1, pgn: 1: pgc: 0x73be080c1420
+[21:24:20] scan: checking audio 1
+[21:24:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[21:24:20] scan: checking subtitle 1
+[21:24:20] scan: id=0x20bd, lang=Nederlands (Wide Screen) [VOBSUB], 3cc=nld ext=1
+[21:24:20] scan: checking subtitle 2
+[21:24:20] scan: id=0x21bd, lang=Francais (Wide Screen) [VOBSUB], 3cc=fra ext=1
+[21:24:20] scan: checking subtitle 3
+[21:24:20] scan: id=0x22bd, lang=italiano (Wide Screen) [VOBSUB], 3cc=ita ext=1
+[21:24:20] scan: checking subtitle 4
+[21:24:20] scan: id=0x23bd, lang=español (Wide Screen) [VOBSUB], 3cc=spa ext=1
+[21:24:20] scan: title 20 has 6 chapters
+[21:24:20] scan: chap 1, 156240 ms
+[21:24:20] scan: chap 2, 103840 ms
+[21:24:20] scan: chap 3, 148040 ms
+[21:24:20] scan: chap 4, 118080 ms
+[21:24:20] scan: chap 5, 94280 ms
+[21:24:20] scan: chap 6, 480 ms
+[21:24:20] scan: aspect = 16:9
+[21:24:20] scan: scanning title 21
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 22
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 23
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 24
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 25
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 26
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 27
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 28
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+[21:24:20] scan: scanning title 29
+[21:24:20] scan: duration is 00:00:00 (480 ms)
+[21:24:20] scan: ignoring title (too short)
+Scanning title 29 of 29, 50.00 %[21:24:21] scan: decoding previews for title 1
+[21:24:21] scan: title angle(s) 1
+Scanning title 1 of 11, preview 5, 52.27 %[21:24:21] using bitstream PAR 64:45
+[21:24:21] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 6-6-6, chroma location: left
+[21:24:21] scan: decoding previews for title 2
+[21:24:21] scan: title angle(s) 1
+[21:24:21] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3, 5.1 ch, 448 kbps)
+[21:24:21] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=384000 English (AC3, Visually Impaired, 5.1 ch, 384 kbps)
+[21:24:21] scan: audio 0x82bd: ac3, rate=48000Hz, bitrate=384000 català (AC3, 5.1 ch, 384 kbps)
+[21:24:21] scan: audio 0x83bd: ac3, rate=48000Hz, bitrate=384000 Francais (AC3, 5.1 ch, 384 kbps)
+[21:24:21] scan: audio 0x84bd: ac3, rate=48000Hz, bitrate=384000 italiano (AC3, 5.1 ch, 384 kbps)
+[21:24:21] scan: audio 0x85bd: ac3, rate=48000Hz, bitrate=384000 español (AC3, 5.1 ch, 384 kbps)
+Scanning title 2 of 11, preview 10, 59.09 %[21:24:21] using bitstream PAR 64:45
+[21:24:21] scan: 10 previews, 720x576, 25.000 fps, autocrop = 74/74/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[21:24:21] scan: decoding previews for title 4
+[21:24:21] scan: title angle(s) 1
+[21:24:21] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=384000 Unknown (AC3, 5.1 ch, 384 kbps)
+[21:24:21] using bitstream PAR 64:45
+[21:24:21] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-5-5, chroma location: left
+[21:24:21] scan: decoding previews for title 6
+[21:24:21] scan: title angle(s) 1
+[21:24:21] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[21:24:21] using bitstream PAR 64:45
+[21:24:21] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[21:24:21] scan: decoding previews for title 8
+[21:24:21] scan: title angle(s) 1
+[21:24:21] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+Scanning title 5 of 11, preview 5, 70.45 %[21:24:22] using bitstream PAR 64:45
+[21:24:22] scan: 10 previews, 720x576, 25.000 fps, autocrop = 12/12/0/0, aspect 16:9, PAR 64:45, color profile: 5-5-6, chroma location: left
+[21:24:22] scan: decoding previews for title 10
+[21:24:22] scan: title angle(s) 1
+[21:24:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 Unknown (AC3, 2.0 ch, 192 kbps)
+[21:24:22] using bitstream PAR 16:15
+[21:24:22] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 4:3, PAR 16:15, color profile: 5-5-6, chroma location: left
+[21:24:22] scan: decoding previews for title 11
+[21:24:22] scan: title angle(s) 1
+[21:24:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 Unknown (AC3, 2.0 ch, 192 kbps)
+Scanning title 7 of 11, preview 5, 79.55 %[21:24:22] using bitstream PAR 64:45
+[21:24:22] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-5-6, chroma location: left
+[21:24:22] scan: decoding previews for title 13
+[21:24:22] scan: title angle(s) 1
+[21:24:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 Unknown (AC3, 2.0 ch, 192 kbps)
+[21:24:22] Warning: Could not read data for preview 5, skipped
+[21:24:22] using bitstream PAR 64:45
+[21:24:22] scan: 4 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[21:24:22] scan: decoding previews for title 14
+[21:24:22] scan: title angle(s) 1
+[21:24:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+Scanning title 9 of 11, preview 9, 90.45 %[21:24:22] using bitstream PAR 64:45
+[21:24:22] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/2/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[21:24:22] scan: decoding previews for title 15
+[21:24:22] scan: title angle(s) 1
+[21:24:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[21:24:22] using bitstream PAR 64:45
+[21:24:22] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/2/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[21:24:22] scan: decoding previews for title 20
+[21:24:22] scan: title angle(s) 1
+[21:24:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3, 5.1 ch, 448 kbps)
+Scanning title 11 of 11, preview 2, 96.36 %[21:24:23] using bitstream PAR 64:45
+[21:24:23] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/74/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[21:24:23] libhb: scan thread found 11 valid title(s)
++ title 1:
+  + index 1
+  + duration: 00:15:00
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: duration 00:00:00
+    + 2: duration 00:15:00
+  + audio tracks:
+  + subtitle tracks:
++ title 2:
+  + Main Feature
+  + index 2
+  + duration: 01:45:04
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 74/74/0/0
+  + chapters:
+    + 1: duration 00:06:44
+    + 2: duration 00:04:45
+    + 3: duration 00:07:10
+    + 4: duration 00:05:52
+    + 5: duration 00:04:17
+    + 6: duration 00:08:57
+    + 7: duration 00:17:37
+    + 8: duration 00:03:07
+    + 9: duration 00:03:03
+    + 10: duration 00:02:52
+    + 11: duration 00:03:16
+    + 12: duration 00:06:10
+    + 13: duration 00:05:36
+    + 14: duration 00:07:11
+    + 15: duration 00:05:11
+    + 16: duration 00:13:16
+  + audio tracks:
+    + 1, English (AC3, 5.1 ch, 448 kbps) (iso639-2: eng), 48000Hz, 448000bps
+    + 2, English (AC3, Visually Impaired, 5.1 ch, 384 kbps) (iso639-2: eng), 48000Hz, 384000bps
+    + 3, català (AC3, 5.1 ch, 384 kbps) (iso639-2: cat), 48000Hz, 384000bps
+    + 4, Francais (AC3, 5.1 ch, 384 kbps) (iso639-2: fra), 48000Hz, 384000bps
+    + 5, italiano (AC3, 5.1 ch, 384 kbps) (iso639-2: ita), 48000Hz, 384000bps
+    + 6, español (AC3, 5.1 ch, 384 kbps) (iso639-2: spa), 48000Hz, 384000bps
+  + subtitle tracks:
+    + 1, English (Wide Screen) [VOBSUB]
+    + 2, English Closed Caption (Wide Screen) [VOBSUB]
+    + 3, العربية (Wide Screen) [VOBSUB]
+    + 4, dansk (Wide Screen) [VOBSUB]
+    + 5, Nederlands (Wide Screen) [VOBSUB]
+    + 6, suomi (Wide Screen) [VOBSUB]
+    + 7, Francais (Wide Screen) [VOBSUB]
+    + 8, italiano (Wide Screen) [VOBSUB]
+    + 9, norsk (Wide Screen) [VOBSUB]
+    + 10, español (Wide Screen) [VOBSUB]
+    + 11, svenska (Wide Screen) [VOBSUB]
+    + 12, català Forced (Wide Screen) [VOBSUB]
++ title 4:
+  + index 4
+  + duration: 00:00:14
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: duration 00:00:14
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, Unknown (AC3, 5.1 ch, 384 kbps) (iso639-2: und), 48000Hz, 384000bps
+  + subtitle tracks:
+    + 1, Unknown, Closed Caption [CC608]
++ title 6:
+  + index 6
+  + duration: 00:00:10
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: duration 00:00:10
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, English (AC3, 2.0 ch, 192 kbps) (iso639-2: eng), 48000Hz, 192000bps
+  + subtitle tracks:
++ title 8:
+  + index 8
+  + duration: 00:00:35
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 12/12/0/0
+  + chapters:
+    + 1: duration 00:00:35
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, English (AC3, 2.0 ch, 192 kbps) (iso639-2: eng), 48000Hz, 192000bps
+  + subtitle tracks:
++ title 10:
+  + index 10
+  + duration: 00:00:12
+  + size: 720x576, pixel aspect: 16/15, display aspect: 1.33, 25.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: duration 00:00:06
+    + 2: duration 00:00:06
+  + audio tracks:
+    + 1, Unknown (AC3, 2.0 ch, 192 kbps) (iso639-2: und), 48000Hz, 192000bps
+  + subtitle tracks:
++ title 11:
+  + index 11
+  + duration: 00:00:30
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: duration 00:00:30
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, Unknown (AC3, 2.0 ch, 192 kbps) (iso639-2: und), 48000Hz, 192000bps
+  + subtitle tracks:
++ title 13:
+  + index 13
+  + duration: 00:00:20
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: duration 00:00:20
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, Unknown (AC3, 2.0 ch, 192 kbps) (iso639-2: und), 48000Hz, 192000bps
+  + subtitle tracks:
++ title 14:
+  + index 14
+  + duration: 00:12:47
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/2/0/0
+  + chapters:
+    + 1: duration 00:12:47
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, English (AC3, 2.0 ch, 192 kbps) (iso639-2: eng), 48000Hz, 192000bps
+  + subtitle tracks:
+    + 1, English (Wide Screen) [VOBSUB]
+    + 2, Nederlands (Wide Screen) [VOBSUB]
+    + 3, Francais (Wide Screen) [VOBSUB]
+    + 4, italiano (Wide Screen) [VOBSUB]
+    + 5, español (Wide Screen) [VOBSUB]
++ title 15:
+  + index 15
+  + duration: 00:11:16
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 0/2/0/0
+  + chapters:
+    + 1: duration 00:11:16
+    + 2: duration 00:00:00
+  + audio tracks:
+    + 1, English (AC3, 2.0 ch, 192 kbps) (iso639-2: eng), 48000Hz, 192000bps
+  + subtitle tracks:
+    + 1, English (Wide Screen) [VOBSUB]
+    + 2, Nederlands (Wide Screen) [VOBSUB]
+    + 3, Francais (Wide Screen) [VOBSUB]
+    + 4, italiano (Wide Screen) [VOBSUB]
+    + 5, español (Wide Screen) [VOBSUB]
++ title 20:
+  + index 20
+  + duration: 00:10:20
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 76/74/0/0
+  + chapters:
+    + 1: duration 00:02:36
+    + 2: duration 00:01:44
+    + 3: duration 00:02:28
+    + 4: duration 00:01:58
+    + 5: duration 00:01:34
+    + 6: duration 00:00:00
+  + audio tracks:
+    + 1, English (AC3, 5.1 ch, 448 kbps) (iso639-2: eng), 48000Hz, 448000bps
+  + subtitle tracks:
+    + 1, Nederlands (Wide Screen) [VOBSUB]
+    + 2, Francais (Wide Screen) [VOBSUB]
+    + 3, italiano (Wide Screen) [VOBSUB]
+    + 4, español (Wide Screen) [VOBSUB]
+HandBrake has exited.
+libdvdread: Encrypted DVD support unavailable.
+libdvdnav: DVD Title: ELYSIUM
+libdvdnav: DVD Serial Number: 434bb450
+libdvdnav: DVD Title (Alternative): 
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdread: Encrypted DVD support unavailable.
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+

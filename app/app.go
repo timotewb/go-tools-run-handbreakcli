@@ -24,7 +24,7 @@ import (
 // Returns:
 //   None. The function performs the encoding process and moves the original files to a "Complete" directory within the same directory as the file.
 
-func Encode(inDir, outDir string, ignore []string, drun bool){
+func Encode(inDir, outDir string, ignore []string, drun bool) {
 
 	var cmdStr string
 	var tidyCheck bool
@@ -99,7 +99,7 @@ func Encode(inDir, outDir string, ignore []string, drun bool){
 						}
 					}
 				}
-			// Encode video files
+				// Encode video files
 			} else if !contains(ignore, file.Name()) {
 
 				tidyCheck = true
@@ -141,7 +141,8 @@ func Encode(inDir, outDir string, ignore []string, drun bool){
 //   - fn: The path to the file to be moved.
 //
 // Returns:
-//   None.
+//
+//	None.
 func tidy(fn string) {
 	dirPath := filepath.Join(filepath.Dir(fn), "Complete")
 	_, err := os.Stat(dirPath)
